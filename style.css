@@ -298,3 +298,44 @@ div.stc-subscribe-wrapper > form > div.stc-categories > h3,
 ul.group-posts-listing > li.listing-item > span.excerpt-dash {
 	display: none;
 }
+
+.paging-navigation a, .comment-navigation a {
+  display: inline-block;
+  font-family: serif;
+  font-size: 1.2em;
+  font-family: Georgia, serif;
+  line-height: 2;
+  max-width: 100%;
+  word-wrap: break-word;
+  color: #FBAA86;
+  }
+[class*="navigation"] .nav-previous .meta-nav:before {
+	content: none;
+	margin-right: 5px;
+}
+[class*="navigation"] .nav-next .meta-nav:after {
+	content: none; 
+	margin-left: 5px;
+}
+  
+  .nav-previous > a::before {
+  content: "\f053";
+  font-family: 'FontAwesome';
+  font-size: 1em;
+  font-style: normal;
+  vertical-align: middle;
+  color: #C3440D;
+}
+
+.nav-next > a::after {
+  content: "\f054";
+  font-family: 'FontAwesome';
+  font-size: 1em;
+  font-style: normal;
+  vertical-align: middle;
+  color: #C3440D;
+}
+
+a.nav-previous {
+	content: "Следующие записи ";
+}
