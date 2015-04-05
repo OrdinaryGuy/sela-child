@@ -10,12 +10,9 @@
 
 	<header class="entry-header" style="display: none;">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
-		<div class="author">
-			<?php trim( the_author() ); ?>
-		</div>
-		<div class="published">
-			<?php the_date(); ?>
-		</div>
+		<div class="author vcard"><div class="fn"><?php the_author(); ?></div></div>
+		<div class="published"><?php the_date(); ?></div>
+		<div class="updated"><?php the_modified_date(); ?></div>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php the_content(); ?>
