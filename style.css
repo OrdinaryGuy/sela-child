@@ -37,6 +37,10 @@ body {
 	* html body {
 		margin-top: 16px !important;
 	}
+	.site-branding {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
 }
 
 @media screen and (min-width: 600px) {
@@ -152,7 +156,7 @@ h6 {
 	margin: 0;
 }
 
-/* Navigations */
+/* Navigation */ 
 media="all"
 @media screen and (min-width: 768px)
 .nav-menu > li > a:after {
@@ -201,12 +205,10 @@ a, .entry-title a:hover, .comment-meta a, .jetpack-testimonial .entry-title, .wi
 	background-color: #FBAA86;
 }
 
+
+/* Misc */
 .footer-widget-area a:hover {
 	color: #BF420C;
-}
-
-footer#colophon.site-footer {
-	display: none;
 }
 
 div.child-pages > article > header.entry-header > h1 {
@@ -235,9 +237,9 @@ p {
 	margin-bottom: .5em;
 }
 
-/* Hiding meta and navigation fields within the post */
-footer.entry-meta, nav.post-navigation {
-	display: none;
+.content-wrapper {
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 /* Pushing Comments box closer to the content */
@@ -253,6 +255,14 @@ ul.display-posts-feedback-title > li.listing-item > div.content {
 
 ul.display-posts-feedback-title > li.listing-item > a.title {
 	font-weight: bold;
+}
+
+ul.display-posts-feedback-title > li.listing-item > span.date {
+	font-family: 'Droid Serif', Georgia, serif;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: 300;
+	color: rgb(170, 170, 170);
 }
 
 /* Reducing footer widget area padding */
@@ -271,7 +281,7 @@ ul.display-posts-feedback-title > li.listing-item > a.title {
 
 .hentry::after {
 	color: #ffa4ad;
-	content: " \2022 \2003 \2022 \2003 \2022";
+	/* content: " \2022 \2003 \2022 \2003 \2022"; */
 	text-align: center;
 	font-size: 1em;
 	background: white;
@@ -290,12 +300,13 @@ div.stc-categories {
 	margin-bottom: .5em;
 }
 
-/* Hiding 'Unsubscribe' checkbox & 'All categories' checkbox */
-div.stc-subscribe-wrapper > form > div.checkbox, 
-div.stc-subscribe-wrapper > form > div.stc-categories > div.checkbox, 
-div.stc-subscribe-wrapper > form > div.stc-categories > h3,
-.site-footer,
-ul.group-posts-listing > li.listing-item > span.excerpt-dash {
+div.stc-subscribe-wrapper > form > div.checkbox, /* Unsubscribe checkbox */
+div.stc-subscribe-wrapper > form > div.stc-categories > div.checkbox, /* All Categories checkbox */
+div.stc-subscribe-wrapper > form > div.stc-categories > h3, /* Categories title in STC */
+.site-footer, /* site footer */
+ul.group-posts-listing > li.listing-item > span.excerpt-dash, /* display-posts shortcode dash btwn title and post excerpt */
+div.author, /* author div */
+div.published /* publication date div */ {
 	display: none;
 }
 
@@ -338,4 +349,19 @@ ul.group-posts-listing > li.listing-item > span.excerpt-dash {
 
 a.nav-previous {
 	content: "Следующие записи ";
+}
+
+ul, ol {
+	margin: 0 0 1em 1em;
+}
+
+/* feedback date style */
+
+/* feedback submit button color */
+input[type="submit"] {
+	background-color: #FBAA86;
+	color: #404040;
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-size: 1em;
 }
